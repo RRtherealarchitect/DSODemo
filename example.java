@@ -11,7 +11,7 @@ class Main {
 
       // Get username from parameters
 String username = request.getParameter("username");
-// Create a statement from database connection
+// Create a statement from database connection test 
 Statement statement = connection.createStatement();  
 // Create unsafe query by concatenating user defined data with query string
 String query = "SELECT secret FROM Users WHERE (username = '" + username + "' AND NOT role = 'admin')";
